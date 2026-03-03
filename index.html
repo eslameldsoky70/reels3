@@ -1127,30 +1127,7 @@ select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 </div>
 <div class="footer"><div class="dev">✨ Developed by Omar Mostafa ✨</div></div>
 
-<!-- ══ PROTECTION ══ -->
-<script>
-// تعطيل كليك يمين
-document.addEventListener('contextmenu',function(e){e.preventDefault();return false;});
-// تعطيل Ctrl+U / Ctrl+S / Ctrl+A / F12
-document.addEventListener('keydown',function(e){
-  if(e.keyCode===123){e.preventDefault();return false;} // F12
-  if(e.ctrlKey&&(e.keyCode===85||e.keyCode===83||e.keyCode===73||e.keyCode===74)){e.preventDefault();return false;} // Ctrl+U/S/I/J
-});
-// كشف DevTools بالحجم
-(function _protect(){
-  const threshold=160;
-  const check=()=>{
-    if(window.outerWidth-window.innerWidth>threshold||window.outerHeight-window.innerHeight>threshold){
-      document.body.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#06060e;color:#f0c040;font-family:Cairo,sans-serif;font-size:1.5rem;text-align:center;flex-direction:column;gap:1rem;"><div style="font-size:3rem;">🔒</div><div>هذا الموقع محمي</div><div style="font-size:.9rem;color:rgba(255,255,255,.4);">© Omar Mostafa — جميع الحقوق محفوظة</div></div>';
-    }
-  };
-  setInterval(check,800);
-})();
-// تعطيل تحديد النص
-document.addEventListener('selectstart',function(e){e.preventDefault();});
-// تعطيل drag
-document.addEventListener('dragstart',function(e){e.preventDefault();});
-</script>
+
 
 <script>
 'use strict';
